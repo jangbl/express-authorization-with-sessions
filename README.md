@@ -4,9 +4,9 @@ This repository contains sample code on how implement a role-based authorization
 
 <h3 align="center">Please help this repo with a ⭐️ if you find it useful! 😁</h3>
 
-This repository is part of the [Sessions in express.js tutorial series on YouTube](https://www.youtube.com/watch?v=bvQah0k5-eA&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2) provided by [productioncoder.com](https://productioncoder.com/).
+This repository is part of the [Sessions in express.js tutorial series on YouTube](https://www.youtube.com/watch?v=DHTC_6lko48) provided by [jangoebel.com](https://jangoebel.com).
 
-[![Express sessions with redis](images/authorization-in-express-with-sessions.png)](https://www.youtube.com/watch?v=bvQah0k5-eA&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2)
+[![Express sessions with redis](images/authorization-in-express-with-sessions.png)](https://www.youtube.com/watch?v=DHTC_6lko48)
 
 For updates, please reach out to [@productioncoder](https://twitter.com/productioncoder) on Twitter.
 
