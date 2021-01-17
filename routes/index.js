@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 const authenticate = require('../middleware/authenticate');
 const authController = require('../controller/auth');
-const profileController = require('../controller/profile');
+const orderController = require('../controller/order');
+const role = require('../authorization/role');
+const authorize = require('../authorization/authorize');
 
 router.post('/login', authController.login);
 
@@ -10,6 +12,20 @@ router.post('/login', authController.login);
 // and can only be accessed if the user is logged in
 router.use(authenticate);
 
-router.get('/profile', profileController.profile);
+router.get(
+  '/order',
+  authorize(role.COMPLIANCE_OFFICER, role.CUSTOMER_SERVICE),
+  orderController.getOrder
+);
+router.post(
+  '/order',
+  authorize(role.CUSTOMER_SERVICE),
+  orderController.createOrder
+);
+router.delete(
+  '/order',
+  authorize(role.CUSTOMER_SERVICE),
+  orderController.deleteOrder
+);
 
 module.exports = router;

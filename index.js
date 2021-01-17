@@ -1,7 +1,8 @@
-const express = require("express");
-const router = require("./routes");
-const session = require("./middleware/session");
-const corsMw = require("./middleware/cors");
+const express = require('express');
+const router = require('./routes');
+const session = require('./middleware/session');
+const corsMw = require('./middleware/cors');
+const apiErrorHandler = require('./errors/api-error-handler');
 
 const app = express();
 app.use(express.json());
@@ -9,9 +10,10 @@ app.use(express.json());
 // app.set('trust proxy', 1);
 
 // setup CORS logic
-app.options("*", corsMw);
+app.options('*', corsMw);
 app.use(corsMw);
 
 app.use(session);
 app.use(router);
-app.listen(8080, () => console.log("server is running on port 8080"));
+app.use(apiErrorHandler);
+app.listen(8080, () => console.log('server is running on port 8080'));

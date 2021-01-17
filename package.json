@@ -1,5 +1,5 @@
 {
-  "name": "express-session-with-redis",
+  "name": "express-authorization-with-session",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
