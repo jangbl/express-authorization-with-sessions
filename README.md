@@ -1,6 +1,6 @@
-# Express Session with Redis
+# Express authorization in Node - role-based authorization
 
-This repository contains sample code on how to use [Redis](https://redis.io) for a cookie-based session implementation with [Redis](https://redis.io) and the Node.js [express](https://expressjs.com/) framework.
+This repository contains sample code on how implement a role-based authorization in Node with use [Redis](https://redis.io) with session-based authentication in Node and [Express.js](https://expressjs.com/).
 
 <h3 align="center">Please help this repo with a ⭐️ if you find it useful! 😁</h3>
 
@@ -10,15 +10,18 @@ This repository is part of the [Sessions in express.js tutorial series on YouTub
 
 For updates, please reach out to [@productioncoder](https://twitter.com/productioncoder) on Twitter.
 
-## Session implementation with express.js and express-session
+## Role-based authorization
 
-This repository illustrates how to create a session-based authentication system in [Express.js](https://expressjs.com/) and what configurations you need to perform for you server to also accept cookies from cross origins - a scenario that is typical for Single Page Applications (SPAs) written in modern frameworks such as [React](https://reactjs.org/) or [Vue](https://vuejs.org/).
+This repository illustrates how to implement an authorization system in [Express.js](https://expressjs.com/) that blocks a user who does not have sufficient rights to perform a particular operation.
+
+We use sessions as a means to log users in and that's why this project also
+requires you to run \_[Redis](https://redis.io) locally.
 
 ## Running this project
 
 ### 1. Installing Redis
 
-Make sure that you have _[Redis](https://redis.io) running locally_ on your machine on its _default_ port `6379`.
+Make sure that you have [Redis](https://redis.io) running locally* on your machine on its \_default* port `6379`.
 
 This project assumes that your [Redis](https://redis.io) instance does _not require a password_ (which is the default).
 
