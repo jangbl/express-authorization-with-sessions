@@ -15,7 +15,7 @@ For updates, please reach out to [@productioncoder](https://twitter.com/producti
 This repository illustrates how to implement an authorization system in [Express.js](https://expressjs.com/) that blocks a user who does not have sufficient rights to perform a particular operation.
 
 We use sessions as a means to log users in and that's why this project also
-requires you to run \_[Redis](https://redis.io) locally.
+requires you to run [Redis](https://redis.io) locally.
 
 ## Running this project
 
