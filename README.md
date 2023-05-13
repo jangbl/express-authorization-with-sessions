@@ -8,7 +8,7 @@ This repository is part of the [Sessions in express.js tutorial series on YouTub
 
 [![Express sessions with redis](images/authorization-in-express-with-sessions.png)](https://www.youtube.com/watch?v=DHTC_6lko48)
 
-For updates, please reach out to [@productioncoder](https://twitter.com/productioncoder) on Twitter.
+For updates, please reach out to [@_jgoebel](https://twitter.com/_jgoebel) on Twitter.
 
 ## Role-based authorization
 
